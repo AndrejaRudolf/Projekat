@@ -1,0 +1,124 @@
+﻿@model Projekat_ITS.Models.Ucenik
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ucenik</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prezime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prezime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImeRoditelja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImeRoditelja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JMBG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JMBG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DatumRodjenja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatumRodjenja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MestoRodjenja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MestoRodjenja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OpstinaRodjenja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OpstinaRodjenja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojLicneKarte)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojLicneKarte)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojTelefona)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojTelefona)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Beleska)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Beleska)
+        </dd>
+
+    </dl>
+
+</div>
+<a href="javascript:window.print()">Štampa</a>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

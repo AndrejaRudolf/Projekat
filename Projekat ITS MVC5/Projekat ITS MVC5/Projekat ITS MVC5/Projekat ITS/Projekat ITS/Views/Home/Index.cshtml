@@ -1,0 +1,10 @@
+﻿@using Projekat_ITS.Models;
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@{
+    var user = Session["user"] as User;
+}
+<h3>Dobrodosli @user.Name</h3>
